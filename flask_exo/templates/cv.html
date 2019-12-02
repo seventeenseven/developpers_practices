@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My CV</title>
+    </head>
+    <body>
+        <h1>{{name}} Curriculum vitae</h1>
+        <img src="{{url_for('static', filename='IMG_7493.JPG')}}" height="300" width="300">
+        <div class="container" style="display:flex">
+            <ol>My hobbies
+                <li>Music</li>
+                <li>Programming</li>
+                <li>Swimming</li>
+            </ol>
+            <ol style="list-style:roman">My Strengths
+                <li>Music</li>
+                <li>Programming</li>
+                <li>Swimming</li>
+            </ol>
+            <ol style="list-style:roman">My weaknesses
+                <li>Music</li>
+                <li>Programming</li>
+                <li>Swimming</li>
+            </ol>
+        </div>
+    </body>
+    </html>

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Universe</title>
 </head>
 <body>
-$END$
+    {% for category in particles.keys() %}
+        <h3>{{ category }}</h3>
+    {% endfor %}
 </body>
 </html>

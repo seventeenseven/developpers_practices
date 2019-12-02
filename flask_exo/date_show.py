@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def date_view():
     date = datetime.now()
-    html = f"<h1>{date}</h1>"
+    html = f"<h1>Today's date:{date}</h1>"
     return html
 
 

@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>My marketplace</title>
+    <style>
+        {{ additional_css }}
+    </style>
 </head>
 <body>
-$END$
+
+    <div class="products-list">
+
+        <h1>This is {{ prod['ProductId'] }} details</h1>
+        <ul>
+            {% for p in prod %}
+            <li class="product">{{ p }} : {{ prod[p] }}  </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+
 </body>
 </html>

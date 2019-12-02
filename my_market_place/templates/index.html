@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>My marketplace</title>
+    <style>
+        {{ additional_css }}
+    </style>
 </head>
 <body>
+    <h1>LIST OF PRODUCTS AVAILABLE</h1>
+    <ul class="products-list">
+        {% for product in products %}
+        <li class="product">
+            <p>{{ product['ProductId'] }} <br> Category: {{ product['Category'] }}</p>
+            <button class="buy-button" type="button"><a href="products/{{ product['ProductId'] }}">Buy </a>!</button>
+        </li>
+        {% endfor %}
+    </ul>
 
 </body>
 </html>
